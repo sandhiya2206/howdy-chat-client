@@ -4,15 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import MessageInput from "./MessageInput";
 import socket from "../socket/socket";
 import {
-  FiCopy,
-  FiCornerUpLeft,
-  FiEdit2,
-  FiTrash2,
-  FiSend,
-  FiSmile,
-  FiChevronDown,
-} from "react-icons/fi";
-import {
   deleteMessage as deleteReduxMessage,
   setConversations
 } from "../redux/chatSlice";
@@ -25,7 +16,6 @@ import {
 import {
   editMessage,
   getMessages,
-  sendMessage,
 } from "../services/messageService";
 import EmojiPicker from "emoji-picker-react";
 import {
@@ -178,10 +168,6 @@ function ChatWindow({
   );
 
   console.log("Conversations:", conversations);
-
-  const openReaction = (msg: any) => {
-    console.log("Reaction", msg);
-  };
 
   useEffect(() => {
     const handleResize = () => {

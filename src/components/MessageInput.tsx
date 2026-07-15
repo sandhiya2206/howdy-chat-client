@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import socket from "../socket/socket";
-import { uploadImage, uploadFile } from "../services/uploadService";
+import {  uploadFile } from "../services/uploadService";
 import EmojiPicker from "emoji-picker-react";
 
 
@@ -44,28 +44,6 @@ function MessageInput({
     setMessageType("text");
   }, [conversationId]);
 
-  const handleImage = async (
-    e: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    const file = e.target.files?.[0];
-
-    if (!file) return;
-
-    const token = localStorage.getItem("token");
-
-    if (!token) return;
-
-    try {
-      const data = await uploadImage(file, token);
-
-      setSelectedImage(data.imageUrl);
-
-      setMessageType("image");
-
-    } catch (err) {
-      console.log(err);
-    }
-  };
 
   const typingTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 

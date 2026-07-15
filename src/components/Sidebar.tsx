@@ -53,9 +53,6 @@ function Sidebar({ setShowSidebar }: Props) {
 
   const navigate = useNavigate();
 
-  const currentUser = JSON.parse(
-    localStorage.getItem("user") || "{}"
-  );
 
   const logout = () => {
     disconnectSocket();
