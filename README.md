@@ -5,7 +5,7 @@ A production-ready real-time chat application built using React, TypeScript, Nod
 ## 🔗 Live Demo
 
 Frontend:
-https://howdy-chat-client-a2sa4nji2-sandhiya-palanis-projects.vercel.app
+https://howdy-chat-client-iiry6mhpq-sandhiya-palanis-projects.vercel.app
 
 Backend:
 https://server-4jry.onrender.com
