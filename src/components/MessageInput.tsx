@@ -255,7 +255,7 @@ function MessageInput({
           }}
         >
           <img
-            src={`${import.meta.env.VITE_API_URL}${selectedImage}`}
+            src={`https://server-4jry.onrender.com/${selectedImage}`}
             style={{
               width: 120,
               borderRadius: 10,

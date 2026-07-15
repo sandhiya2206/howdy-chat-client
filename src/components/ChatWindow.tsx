@@ -734,7 +734,7 @@ function ChatWindow({
                   <div>{msg.message}</div>
                 ) : msg.message_type === "image" ? (
                   <img
-                    src={`${import.meta.env.VITE_API_URL}${msg.message}`}
+                    src={`https://server-4jry.onrender.com/${msg.message}`}
                     alt="chat"
                     style={{
                       maxWidth: 250,
@@ -748,7 +748,7 @@ function ChatWindow({
 
                       return (
                         <a
-                          href={`${import.meta.env.VITE_API_URL}${file.url}`}
+                          href={`https://server-4jry.onrender.com/${file.url}`}
                           target="_blank"
                           rel="noreferrer"
                         >
