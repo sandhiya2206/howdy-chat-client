@@ -1,36 +1,289 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 🚀 Howdy Chat Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A production-ready real-time chat application built using React, TypeScript, Node.js, Express, MySQL, Redux Toolkit, and Socket.IO.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Frontend:
+https://howdy-chat-client-a2sa4nji2-sandhiya-palanis-projects.vercel.app
 
-## React Compiler
+Backend:
+https://server-4jry.onrender.com
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+# 📌 Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Authentication
+- JWT Authentication
+- Login
+- Register
+- Protected Routes
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Real-time Chat
+- One-to-One Messaging
+- Socket.IO Integration
+- Online / Offline Status
+- Typing Indicator
+- Auto Scroll
+- Infinite Scroll
+- Pagination
+
+## Message Features
+- ✅ Send Message
+- ✅ Reply Message
+- ✅ Edit Message
+- ✅ Delete Message
+- ✅ Forward Message
+- ✅ Copy Message
+- ✅ Emoji Reactions
+- ✅ Read Receipt
+- ✅ Delivered Status
+- ✅ Seen Status
+
+## Attachments
+- Image Upload
+- File Upload
+- Document Preview
+
+## Search
+- Search Conversations
+- Search Messages
+- Search Users
+
+## UI
+- Responsive Design
+- WhatsApp-style Message Menu
+- Unread Count Badge
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React 19
+- TypeScript
+- Redux Toolkit
+- React Router
+- Axios
+- Socket.IO Client
+- React Icons
+- Emoji Picker
+
+## Backend
+
+- Node.js
+- Express
+- Socket.IO
+- TypeScript
+- JWT Authentication
+- Multer
+- MySQL2
+
+## Database
+
+- MySQL
+
+## Deployment
+
+- Frontend : Vercel
+- Backend : Render
+- Database : Railway
+
+---
+
+# 📁 Folder Structure
+
+```
+client/
+│
+├── src/
+│   ├── api/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   ├── redux/
+│   ├── services/
+│   ├── socket/
+│   ├── types/
+│   └── utils/
+
+server/
+│
+├── src/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── routes/
+│   ├── socket/
+│   ├── uploads/
+│   └── utils/
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
-=======
-# howdy-chat-client
->>>>>>> e396887af7d15b49ff8ff036264a460e9b79b12d
+---
+
+# ⚙ Environment Variables
+
+## Frontend (.env)
+
+```
+VITE_API_URL=https://server-4jry.onrender.com
+```
+
+## Backend (.env)
+
+```
+PORT=5000
+
+CLIENT_URL=https://howdy-chat-client-a2sa4nji2-sandhiya-palanis-projects.vercel.app
+
+JWT_SECRET=your_secret
+
+DB_HOST=your_host
+
+DB_PORT=your_port
+
+DB_NAME=railway
+
+DB_USER=root
+
+DB_PASSWORD=your_password
+```
+
+---
+
+# 🚀 Installation
+
+## Clone Repository
+
+```
+git clone https://github.com/yourusername/howdy-chat.git
+```
+
+## Frontend
+
+```
+cd client
+
+npm install
+
+npm run dev
+```
+
+## Backend
+
+```
+cd server
+
+npm install
+
+npm run dev
+```
+
+---
+
+# Production Build
+
+Frontend
+
+```
+npm run build
+```
+
+Backend
+
+```
+npm run build
+
+npm start
+```
+
+---
+
+# Socket Events
+
+## Client → Server
+
+- join-room
+- leave-room
+- send-message
+- typing
+- stop-typing
+- message-read
+- message-delivered
+- message-forward
+- add-reaction
+
+## Server → Client
+
+- receive-message
+- typing
+- stop-typing
+- user-online
+- user-offline
+- message-edited
+- message-deleted
+- reaction-added
+
+---
+
+# Database Tables
+
+- users
+- conversations
+- messages
+- message_reactions
+
+---
+
+# Architecture
+
+```
+React
+   │
+Redux Toolkit
+   │
+Axios
+   │
+Express API
+   │
+Socket.IO
+   │
+MySQL Database
+```
+
+---
+
+# Deployment
+
+Frontend
+
+- Vercel
+
+Backend
+
+- Render
+
+Database
+
+- Railway
+
+---
+
+# Future Improvements
+
+- Voice Messages
+- Video Call
+- Screen Sharing
+- Dark Mode
+- Pinned Chats
+- Archived Chats
+- Message Encryption
+- Push Notifications
+
+---
+
+# Author
+
+Sandhiya Palani
