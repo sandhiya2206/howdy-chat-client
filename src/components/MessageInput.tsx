@@ -277,7 +277,7 @@ function MessageInput({
           }}
         >
           <img
-            src={`http://localhost:5000${selectedImage}`}
+            src={`${import.meta.env.VITE_API_URL}${selectedImage}`}
             style={{
               width: 120,
               borderRadius: 10,

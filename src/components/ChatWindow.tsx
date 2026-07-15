@@ -748,7 +748,7 @@ function ChatWindow({
                   <div>{msg.message}</div>
                 ) : msg.message_type === "image" ? (
                   <img
-                    src={`http://localhost:5000${msg.message}`}
+                    src={`${import.meta.env.VITE_API_URL}${msg.message}`}
                     alt="chat"
                     style={{
                       maxWidth: 250,
@@ -762,7 +762,7 @@ function ChatWindow({
 
                       return (
                         <a
-                          href={`http://localhost:5000${file.url}`}
+                          href={`${import.meta.env.VITE_API_URL}${file.url}`}
                           target="_blank"
                           rel="noreferrer"
                         >
